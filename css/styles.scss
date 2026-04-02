@@ -1,0 +1,116 @@
+$forestGreen : rgb(29, 52, 12);
+
+:root { 
+    color-scheme: dark;
+}
+
+@font-face {
+    font-family: chaparral;
+    src: url(/fonts/ChaparralProLight.otf);
+}
+
+* {
+    margin: 5px auto;
+    font-family: chaparral;
+}
+
+#wrapper {
+    max-width: 900px;
+    min-height: 100vh;
+}
+
+.main-content {
+    width: fit-content;
+    border-style: hidden;
+    border-radius: 15px;
+    background-color: $forestGreen;
+    padding: 5px;
+    padding-left: 75px;
+    padding-right: 75px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.main-content div {
+    margin: 5px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.highlight {
+    border-color: chartreuse;
+}
+
+h1, h2, h4 {
+    text-align: center;
+}
+
+table, th, td {
+    padding: 5px;
+    border-style: solid;
+    border-color: slategray;
+    border-collapse: collapse;
+}
+
+footer {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .main-content{
+        grid-template-columns: 1fr;
+    }
+}
+
+div {
+    margin: 5px;
+}
+
+footer, header {
+    text-align: center;
+}
+
+#keyboard {
+    display: flex;
+    max-width:40%;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    button {
+        overflow: wrap;
+        padding: 5px;
+        margin: 5px;
+    }
+}
+
+#wrapper {
+    max-width: 900px;
+    margin: 5px auto;
+    min-height: 100vh;
+}
+
+#target {
+    background-color: rgb(67, 104, 30);
+    border-radius: 5px;
+    color: black;
+}
+
+#gamebox {
+    text-align: center;
+    margin: 0 auto;
+}
+
+#hangmanBox {
+    display: flex;
+    justify-content: center;
+}
+
+.hangmanLetter {
+    border: 1px solid;
+    padding: 2px;
+    margin: 5px;
+}
